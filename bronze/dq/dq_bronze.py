@@ -21,7 +21,7 @@ Pipeline settings
 -----------------
 serverless, default catalog = databricks_demo, default schema = operations,
 and Advanced settings > event log published to
-databricks_demo.operations.dq_pipeline_event_log (used by dq_operations.sql).
+databricks_demo.operations.dq_bronze_event_log (used by dq_operations.sql).
 
 NOT IN THIS FILE (see dq_operations.sql): operations.dq_result,
 operations.batch_control, quarantine history. pipeline_update_id is not written
