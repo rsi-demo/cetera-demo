@@ -29,7 +29,7 @@ CATALOG = "databricks_demo"
 BRONZE = f"{CATALOG}.bronze"
 SILVER = f"{CATALOG}.silver"
 LAYER = "silver"
-PREFIX = "s"
+PREFIX = "silver"
 ENFORCE = spark.conf.get("dq.enforce_reconciliation", "false") == "true"  # noqa: F821
 EXPECT = dp.expect_all_or_fail if ENFORCE else dp.expect_all
 

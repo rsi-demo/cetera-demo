@@ -35,7 +35,7 @@ CATALOG = "databricks_demo"
 SILVER = f"{CATALOG}.silver"
 GOLD = f"{CATALOG}.gold"
 LAYER = "gold"
-PREFIX = "g"
+PREFIX = "gold"
 AS_OF_DATE = spark.conf.get("gold.as_of_date", "2023-12-31")  # noqa: F821
 ENFORCE = spark.conf.get("dq.enforce_reconciliation", "false") == "true"  # noqa: F821
 EXPECT = dp.expect_all_or_fail if ENFORCE else dp.expect_all
